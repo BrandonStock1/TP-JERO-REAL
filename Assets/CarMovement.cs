@@ -26,7 +26,7 @@ public class CarMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, rotationSpeed, 0);
+            transform.Rotate(0, -rotationSpeed, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {

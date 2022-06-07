@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CarMovement2 : MonoBehaviour
 {
-    
+    public float movementSpeed;
+    public float rotationSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +16,7 @@ public class CarMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movementSpeed;
-        movementSpeed = 1;
-        float rotationSpeed;
-        rotationSpeed = 1;
-
+     
         if (Input.GetKey(KeyCode.I))
         {
             transform.Translate(0, 0, movementSpeed);
@@ -30,7 +27,7 @@ public class CarMovement2 : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.J))
         {
-            transform.Rotate(0, rotationSpeed, 0);
+            transform.Rotate(0, -rotationSpeed, 0);
         }
         if (Input.GetKey(KeyCode.L))
         {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Follow : MonoBehaviour
@@ -29,9 +30,7 @@ public class Follow : MonoBehaviour
         float CurrentTime = Time.time;
 
         txt_time.text = CurrentTime.ToString();
-        
-        txt_timeFloored = Mathf.Floor(CurrentTime).ToString();
-        
+                
         //contador 
         txt_min.text = Mathf.Floor(CurrentTime /60).ToString();
 
