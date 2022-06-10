@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Colission : MonoBehaviour
 {
 
-    public Text txtEliminado;
-    public Text txtGanaste; 
+    public GameObject txtEliminado;
+    public GameObject txtGanaste;
 
 
     // Start is called before the first frame update
@@ -27,20 +27,19 @@ public class Colission : MonoBehaviour
         if (other.gameObject.name == "Red car")
         {
             Destroy(gameObject);
-            txtEliminado.text = "Quedaste eliminado debido a un choque!!!";
+            txtEliminado.SetActive(true);
             Time.timeScale = 0;
             Debug.Log("Quedaste eliminado...");
         }
         if (other.gameObject.name == "Pista")
         {
-            txtEliminado.text = "Quedaste eliminado debido a un choque!!!";
             Debug.Log("Chocaste!");
         }
         if (other.gameObject.name == "Meta")
         {
-            txtGanaste.text = "Ganaste!!!";
+            txtGanaste.SetActive(true);
             Time.timeScale = 0;
-            Debug.Log("Quedaste eliminado...");
+            Debug.Log("Ganaste!!!");
         }
     }
 }

@@ -1,20 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Bombs : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Clone;
+    public int Cantidad;
+    public Text txtCantClon;
 
-    // Update is called once per frame
-    void Update()
+    public void CloneObject()
     {
-        
+        Cantidad = int.Parse(txtCantClon.text);
+        int contador = 0;
+        while (contador < Cantidad)
+        {
+            Instantiate(Clone);
+            contador++;
+        }
     }
-    
 }

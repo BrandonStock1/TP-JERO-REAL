@@ -249,7 +249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Ganaste!!!!
 --- !u!222 &211262991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -383,8 +383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.655, y: -153}
-  m_SizeDelta: {x: 756.6898, y: 67.03791}
+  m_AnchoredPosition: {x: 21.655, y: -141.5}
+  m_SizeDelta: {x: 756.6898, y: 90.01243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230802485
 MonoBehaviour:
@@ -417,7 +417,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Chocaste con tu compa\xF1ero!!!\nQuedaste eliminado..."
 --- !u!222 &230802486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473026780}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1460,8 +1460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cab6f56577e44c40a21e5b81dd545a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtEliminado: {fileID: 230802485}
-  txtGanaste: {fileID: 211262990}
+  txtEliminado: {fileID: 0}
+  txtGanaste: {fileID: 0}
 --- !u!114 &1098047774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,6 +1474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b7349a727e2b34cb4b5db673dab3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Clone: {fileID: 0}
+  Cantidad: 0
+  txtCantClon: {fileID: 0}
 --- !u!1 &1173329847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c51bcd28642d164180249709002c65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeElapsed: 0
+  txt_timeFloored: {fileID: 2086797842}
 --- !u!1 &1226619351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1876,7 @@ GameObject:
   - component: {fileID: 1573617627}
   - component: {fileID: 1573617629}
   - component: {fileID: 1573617628}
+  - component: {fileID: 1573617630}
   m_Layer: 5
   m_Name: txtGanaste
   m_TagString: Untagged
@@ -1935,6 +1939,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573617626}
   m_CullTransparentMesh: 0
+--- !u!114 &1573617630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573617626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b7349a727e2b34cb4b5db673dab3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clone: {fileID: 1744993950557102663, guid: bdc207d8d6845a049a6cc8d80cbe7306, type: 3}
+  Cantidad: 20
+  txtCantClon: {fileID: 0}
 --- !u!1 &1577881620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2434,7 @@ GameObject:
   - component: {fileID: 2086797843}
   - component: {fileID: 2086797842}
   m_Layer: 5
-  m_Name: timeElapsed
+  m_Name: txt_timeFloored
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
