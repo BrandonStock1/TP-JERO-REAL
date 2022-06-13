@@ -6,6 +6,7 @@ public class Colission2 : MonoBehaviour
 {
 
     public GameObject txtEliminado;
+    public GameObject txtGanaste;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +27,17 @@ public class Colission2 : MonoBehaviour
             Destroy(gameObject);
             txtEliminado.SetActive(true);
             Time.timeScale = 0;
-            Debug.Log("Quedaste eliminado...");
+            Debug.Log("Quedaron eliminados...");
         }
         if (other.gameObject.name == "Pista")
         {
             Debug.Log("Chocaste!");
+        }
+        if (other.gameObject.name == "Meta")
+        {
+            txtGanaste.SetActive(true);
+            Time.timeScale = 0;
+            Debug.Log("Ganaste!!!");
         }
     }
  

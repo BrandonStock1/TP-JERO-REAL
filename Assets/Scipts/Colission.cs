@@ -24,12 +24,12 @@ public class Colission : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "Red car")
+        if (other.gameObject.name == "Blue car")
         {
             Destroy(gameObject);
             txtEliminado.SetActive(true);
             Time.timeScale = 0;
-            Debug.Log("Quedaste eliminado...");
+            Debug.Log("Quedaron eliminados...");
         }
         if (other.gameObject.name == "Pista")
         {
