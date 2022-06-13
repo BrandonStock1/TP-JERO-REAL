@@ -7,7 +7,7 @@ public class Colission : MonoBehaviour
 {
 
     public GameObject txtEliminado;
-    public GameObject txtGanaste;
+    public GameObject txtGanaste2;
 
 
     // Start is called before the first frame update
@@ -37,7 +37,7 @@ public class Colission : MonoBehaviour
         }
         if (other.gameObject.name == "Meta")
         {
-            txtGanaste.SetActive(true);
+            txtGanaste2.SetActive(true);
             Time.timeScale = 0;
             Debug.Log("Ganaste!!!");
         }
