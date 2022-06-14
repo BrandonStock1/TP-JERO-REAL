@@ -29,10 +29,6 @@ public class Colission2 : MonoBehaviour
             Time.timeScale = 0;
             Debug.Log("Quedaron eliminados...");
         }
-        if (other.gameObject.name == "Pista")
-        {
-            Debug.Log("Chocaste!");
-        }
         if (other.gameObject.name == "Meta")
         {
             txtGanaste.SetActive(true);

@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 432508427}
   - component: {fileID: 432508435}
   - component: {fileID: 432508433}
+  - component: {fileID: 432508434}
   m_Layer: 0
   m_Name: Blue car
   m_TagString: Untagged
@@ -676,6 +677,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &432508434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432508426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99930c30f82c82e4d93d75025745edfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &432508435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1109,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873373001}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &873373004
 Camera:
   m_ObjectHideFlags: 0
@@ -1389,6 +1402,7 @@ GameObject:
   - component: {fileID: 1098047765}
   - component: {fileID: 1098047773}
   - component: {fileID: 1098047771}
+  - component: {fileID: 1098047772}
   m_Layer: 0
   m_Name: Red car
   m_TagString: Untagged
@@ -1409,7 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.5
-  rotationSpeed: 3
+  rotationSpeed: 4
 --- !u!54 &1098047766
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1595,6 +1609,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1098047772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098047764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99930c30f82c82e4d93d75025745edfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1098047773
 MonoBehaviour:
   m_ObjectHideFlags: 0

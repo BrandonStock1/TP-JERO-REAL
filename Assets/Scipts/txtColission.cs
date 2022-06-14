@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class txtColission : MonoBehaviour
 {
@@ -16,8 +17,11 @@ public class txtColission : MonoBehaviour
         
     }
 
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Contacto");
+        if (other.gameObject.name == "Pista")
+        {
+            Debug.Log("Chocaste!");
+        }
     }
 }
