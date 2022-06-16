@@ -16,16 +16,16 @@ public class Bombs : MonoBehaviour
 
     void Start()
     {
-
+        
     }
     
     void Update()
     {
-        if (txtGanaste == true)
+        if (txtGanaste == false)
         {
             CloneObject();
         }
-        if (txtGanaste2 == true)
+        if (txtGanaste2 == false)
         {
             CloneObject();
         }
@@ -34,10 +34,13 @@ public class Bombs : MonoBehaviour
     public void CloneObject()
     {
         int contador = 0;
-        while (contador < Cantidad)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(Clone);
-            contador++;
+            while (contador < Cantidad)
+            {
+                Instantiate(Clone);
+                contador++;
+            }
         }
     }
 }
