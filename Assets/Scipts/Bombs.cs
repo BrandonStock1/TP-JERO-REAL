@@ -10,12 +10,32 @@ public class Bombs : MonoBehaviour
     public GameObject Clone;
     public int Cantidad;
 
+    public GameObject txtGanaste;
+    public GameObject txtGanaste2;
+
+
+    void Start()
+    {
+
+    }
+    
+    void Update()
+    {
+        if (txtGanaste == true)
+        {
+            CloneObject();
+        }
+        if (txtGanaste2 == true)
+        {
+            CloneObject();
+        }
+    }
+
     public void CloneObject()
     {
         int contador = 0;
         while (contador < Cantidad)
         {
-            transform.position = new Vector3(-0.12f, 0.25f, 0.12f);
             Instantiate(Clone);
             contador++;
         }
