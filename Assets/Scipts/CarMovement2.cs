@@ -17,11 +17,11 @@ public class CarMovement2 : MonoBehaviour
     void Update()
     {
      
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.K))
         {
             transform.Translate(0, 0, movementSpeed);
         }
-        if (Input.GetKey(KeyCode.K))
+        if (Input.GetKey(KeyCode.I))
         {
             transform.Translate(0, 0, -movementSpeed);
         }

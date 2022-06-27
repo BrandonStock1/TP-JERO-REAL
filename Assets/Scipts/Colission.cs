@@ -24,7 +24,7 @@ public class Colission : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "Blue car")
+        if (other.gameObject.name == "Blue Car")
         {
             Destroy(gameObject);
             txtEliminado.SetActive(true);
